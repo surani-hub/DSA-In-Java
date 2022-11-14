@@ -5,6 +5,7 @@ import java.util.Scanner;
 */
 public class CurrencyConverter {
     public static void main(String[] args) {
+
         Scanner in = new Scanner(System.in);
         System.out.println("Input amount in rupees ");
         int amount = in.nextInt();
