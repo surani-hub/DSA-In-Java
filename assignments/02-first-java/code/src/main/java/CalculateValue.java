@@ -11,17 +11,17 @@ public class CalculateValue {
         int num2 = in.nextInt();
         char op = in.next().trim().charAt(0);
 
-        if(op == '+'){
-            System.out.println(num1+num2);
+        if (op == '+') {
+            System.out.println(num1 + num2);
         }
-        if(op == '-'){
-            System.out.println(num1-num2);
+        if (op == '-') {
+            System.out.println(num1 - num2);
         }
-        if(op == '*'){
-            System.out.println(num1*num2);
+        if (op == '*') {
+            System.out.println(num1 * num2);
         }
-        if(op == '/'){
-            System.out.println(num1/num2);
+        if (op == '/') {
+            System.out.println(num1 / num2);
         }
     }
 }
