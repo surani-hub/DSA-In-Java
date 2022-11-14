@@ -5,16 +5,17 @@ import java.util.Scanner;
 */
 public class EvenOrOdd {
     public static void main(String[] args) {
+
         Scanner in = new Scanner(System.in);
         System.out.println("Input a number: ");
 
-        if(isEvenOrOdd(in.nextInt()))
+        if (isEvenOrOdd(in.nextInt()))
             System.out.println("Even number");
         else
             System.out.println("Odd");
     }
 
-    static boolean isEvenOrOdd(int num){
+    static boolean isEvenOrOdd(int num) {
         return num % 2 == 0;
     }
 }
