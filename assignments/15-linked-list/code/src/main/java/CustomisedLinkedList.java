@@ -1,4 +1,4 @@
-public class CustomisedLinkedList {
+class CustomisedLinkedList{
     private Node head;
     private Node tail;
     private int size;
@@ -83,12 +83,41 @@ public class CustomisedLinkedList {
         int value = last.next.val;
         tail = last;
         size--;
-        System.out.println("current tail is " + tail.val);
         return value;
     }
 
-    public int get(int index){
-        return 0;
+    public int delete(int index){
+        if(index == 0){
+            return deleteFirst();
+        }
+        if(index == size - 1){
+            return deleteLast();
+        }
+
+        Node prev = get(index -1);
+        int value = prev.next.val;
+        prev.next = prev.next.next;
+        size--;
+        return value;
+    }
+
+    public Node find(int value){
+        Node node = head;
+        for(int i=0;i<size;i++){
+            if(node.val == value){
+                return node;
+            }
+            node = node.next;
+        }
+        return null;
+    }
+
+    public Node get(int index){
+        Node node = head;
+        for(int i=0;i<index;i++){
+            node = node.next;
+        }
+        return node;
     }
 
     public void display(){
