@@ -12,7 +12,8 @@ public class WaysToSplitArray {
         for (int num : nums) {
             totalSum += num;
         }
-        long lsum = 0, count = 0;
+        long lsum = 0;
+        int count = 0;
         long rsum = 0;
         for (int i = 0; i < nums.length - 1; i++) {
             lsum += nums[i];
