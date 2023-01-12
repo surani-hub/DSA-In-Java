@@ -11,11 +11,10 @@ public class PrintNumberIncreasingOrder {
     }
 
     static public void printIncreasing(int number) {
-        if (number == 1) {
-            System.out.println(number + " ");
+        if (number == 0) {
             return;
         }
         printIncreasing(number - 1);
-        System.out.println(number + " ");
+        System.out.print(number + " ");
     }
 }
