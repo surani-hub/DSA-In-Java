@@ -11,11 +11,10 @@ public class PrintNumbers {
     }
 
     static public void printDecreasing(int number) {
-        if (number == 1) {
-            System.out.println(number);
+        if (number == 0){
             return;
         }
-        System.out.println(number + " ");
+        System.out.print(number + " ");
         printDecreasing(number - 1);
     }
 }
