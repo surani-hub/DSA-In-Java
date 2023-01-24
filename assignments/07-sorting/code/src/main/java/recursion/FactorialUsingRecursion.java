@@ -8,6 +8,8 @@ public class FactorialUsingRecursion {
         int number = sc.nextInt();
 
         System.out.println(fact(number));
+
+        System.out.println(factorial(5, 1));
     }
 
     static public int fact(int number) {
@@ -15,5 +17,12 @@ public class FactorialUsingRecursion {
             return number;
         }
         return number * fact(number - 1);
+    }
+
+    static public int factorial(int i, int factVal) {
+        if (i < 1) {
+            return factVal;
+        }
+        return factorial(i - 1, factVal * i);
     }
 }
