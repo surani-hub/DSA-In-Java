@@ -18,9 +18,9 @@ public class Subsequences {
         }
 
         List<Integer> subsequence = new ArrayList<>();
-//        collectSubsequence(0, arr, subsequence);
-//        System.out.println("=======================================");
-//
+        collectSubsequence(0, arr, subsequence);
+        System.out.println("=======================================");
+
 //        List<List<Integer>> ans = new ArrayList<>();
 //        printSubsequence(0, arr, subsequence, ans);
 //        System.out.println(ans);
@@ -29,12 +29,12 @@ public class Subsequences {
 //        count = 0;
 //        countSubsequence(0, arr, subsequence, count);
 //        System.out.println("count is " + count);
-//            System.out.println("=======================================");
-        Arrays.sort(arr);
-        List<List<Integer>> ans = new ArrayList<>();
-        printUniqueSubsequence(0, arr, subsequence, ans);
-        System.out.println(ans);
-        System.out.println("=================================");
+//        System.out.println("=======================================");
+//        Arrays.sort(arr);
+//        List<List<Integer>> ans = new ArrayList<>();
+//        printUniqueSubsequence(0, arr, subsequence, ans);
+//        System.out.println(ans);
+//        System.out.println("=================================");
     }
 
     // printing all subsequences
