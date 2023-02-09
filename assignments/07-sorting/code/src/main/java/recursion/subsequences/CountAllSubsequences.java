@@ -20,7 +20,7 @@ public class CountAllSubsequences {
     }
 
     // count all subsequences
-    public static void printSubsequence(int index, int[] arr, List<Integer> subsequence) {
+    static public void printSubsequence(int index, int[] arr, List<Integer> subsequence) {
         if (index == arr.length) {
             count++;
             return;
