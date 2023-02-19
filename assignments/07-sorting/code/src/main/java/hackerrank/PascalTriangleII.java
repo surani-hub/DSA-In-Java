@@ -3,6 +3,7 @@ package hackerrank;
 import java.util.ArrayList;
 import java.util.List;
 
+/* https://leetcode.com/problems/pascals-triangle-ii/ */
 public class PascalTriangleII {
     public static void main(String[] args) {
         int rowIndex = 3;
